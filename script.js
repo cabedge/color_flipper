@@ -9,11 +9,19 @@ const RandomEl = document.querySelector(".Random")
 let simpleColorsArrayIndex = 0;
 let globalstate = 1
 
-
-
 function mutateGlobalVariable(number) {
     globalstate = number
 }
+
+startingEvent()
+
+function startingEvent(){
+    nonRandomEl.style.color = "White"
+    nonRandomEl.style.backgroundColor = "#51a02e"
+    nonRandomEl.style.padding = "5% 5%"
+    nonRandomEl.style.borderRadius = "10px"
+}
+
 
 nonRandomEl.addEventListener("click",function(){
     mutateGlobalVariable(1)
